@@ -28,7 +28,7 @@ const Navbar = () => {
       <li>
         <details>
           <summary className="hover:text-orange">Dashboard</summary>
-          <ul className="p-2 border-2 w-full">
+          <ul className="p-2 w-[180px]">
             <li className="hover:text-orange text-sm">
               <NavLink
                 to="/add-service"
@@ -75,9 +75,9 @@ const Navbar = () => {
     </>
   );
   return (
-    <nav className="navbar bg-base-100 max-w-7xl mx-auto py-10">
+    <nav className="navbar py-5 max-w-7xl mx-auto">
       <div className="navbar-start">
-        <div className="dropdown">
+        <div className="dropdown z-30">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ const Navbar = () => {
           Smart<span className="text-orange">Fix</span>
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex z-30">
         <ul className="menu menu-horizontal px-1 text-lg font-medium">
           {navMenu}
         </ul>
